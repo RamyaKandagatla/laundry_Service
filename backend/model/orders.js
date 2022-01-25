@@ -27,11 +27,11 @@ const order= new Schema({
         default:'Warangal'
     },
     details:[{
-        Houseno:{type:String},
-        City:{type:String},
-        District:{type:String},
-        State:{type:String},
-        Pincode:{type:String},
+        Houseno:{type:String,default:"4-6-8"},
+        City:{type:String,default:"Madhapur"},
+        District:{type:String,default:"Hyderabad"},
+        State:{type:String,default:"Telangana"},
+        Pincode:{type:String,default:"503208"}
     }],
     city:{
         type:String,
