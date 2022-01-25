@@ -47,5 +47,22 @@ router.post('/orders',async(req,res)=>{
 
 });
 
+router.get('/:id',async(req,res)=>{
+    try{
+        const orders = await orders.find({_id:req.params.id});
+        res.status(200).json({
+            status:'success',
+            data:orders
+        });
+
+    }catch(e){
+        res.status(500).json({
+            status:"failed",
+            message:e.message
+        })
+    }
+});
+
 
 module.exports=router;
+
