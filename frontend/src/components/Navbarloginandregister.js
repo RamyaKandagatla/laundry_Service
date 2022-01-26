@@ -9,7 +9,7 @@ function Navbarloginandregister() {
     <button className='two'>Home</button>
     <button className='three'>Pricing</button>
     <button className='four'>Career</button>
-    <button className='five'>Sign In</button>
+  <button className='five'>Sign In</button>
   </div>
   );
 }

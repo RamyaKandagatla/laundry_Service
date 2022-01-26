@@ -1,5 +1,11 @@
 const express=require('express');
 const app=express();
+var cors = require('cors');
+
+app.use(express.urlencoded({extended:true}));
+
+app.use(cors({origin:'*'}));
+
 const bodyparser=require('body-parser');
 app.use(bodyparser());
 const dotenv=require('dotenv');

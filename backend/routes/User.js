@@ -1,29 +1,29 @@
 const express=require('express');
+const app=express();
 const router=express.Router();
 const users=require('../model/Users');
-const {json}=require('body-parser');
+const bodyparser=require('body-parser');
+app.use(bodyparser());
 const bcrypt = require('bcrypt');
 const jwt =require('jsonwebtoken');
 
 const secret="RESTAPI";
 
-router.post('/register',async(req,res)=>{
+router.post('/signup',async(req,res)=>{
     try{
 
-            const {name,email,phone,password,confirmpassword,state,district,address,pincode}=req.body;  // destructuring
+            const {name,email,phone,password,state,district,address,pincode}=req.body;  // destructuring
             const exist=await users.findOne({email});
             if(exist){
                 return res.status(400).send('user already registered');
-            }if(password!=confirmpassword){
-                return res.status(403).send('Invalid Password');
             }
             
             bcrypt.hash(password, 10, async function(err, hash) {
                 try{
                     if(err){
                         console.log(err)
-                        return res.status(400).json({
-                            status:"failed",
+                        return res.status(401).json({
+                            // status:"failed",
                             message:"Invalid data"
                         })
                     }else{
@@ -32,14 +32,13 @@ router.post('/register',async(req,res)=>{
                             email,
                             phone,
                             password:hash,
-                            confirmpassword:hash,
                             state,
                             district,
                             address,
                             pincode
                         });
                         return res.status(200).json({
-                            status:"success",
+                            // status:"success",
                             data:user
                         })
                     }
@@ -49,8 +48,8 @@ router.post('/register',async(req,res)=>{
          
                         }
                         catch(e){
-                        res.status(400).json({
-                            status:"failed",
+                        res.status(403).json({
+                            // status:"failed",
                             message:e.message
                         })
                     }
