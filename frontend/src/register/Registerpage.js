@@ -1,5 +1,5 @@
 import React from "react";
-import "./Registerpage.css";
+
 
 import Navbarloginandregister from '../components/Navbarloginandregister';
 import Footertop from '../components/Footertop';

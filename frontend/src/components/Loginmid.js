@@ -17,8 +17,8 @@ function Loginmid() {
   const handlechanges=async(e)=>{
     e.preventDefault();
     const{email,password}=user;
-    const users=await fetch("/fetchuser",{
-      method:"GET",
+    const users=await fetch("/login",{
+      method:"POST",
       headers:{
         "Content-Type":"application/json"
       },
@@ -27,8 +27,16 @@ function Loginmid() {
       })
   });
   console.log(users);
-  navigate('/',{ replace: true });
-}
+  if(users.status===200){
+    navigate('/createorder',{ replace: true });
+  }
+  else if(users.status===401){
+    alert('invalid crendentials');
+  }else if(users.status===500){
+    alert('server error')
+  }
+  
+};
   return (
     <div className="lm">
       <div className="lp">
@@ -49,20 +57,20 @@ function Loginmid() {
         <div className="rp1">
           <h4>SIGN IN</h4>
         </div>
-        <form>
+        <form method="POST">
           <label className="ll1">Mobile/Email</label>
           <br />
-          <input name="email" className="eml" value={user.email} onchange={changes} type="text" />
+          <input type="text" name="email" className="eml" value={user.email} onChange={changes}  />
           <br />
 
           <label className="ll2">password</label>
           <br />
 
-          <input name="password" className="pw" value={user.password} onchange={changes} type="password" />
+          <input type="password" name="password" className="pw" value={user.password} onChange={changes}  />
           <img src={lock} alt="lock" />
 
           <h6>forgot password?</h6>
-          <button type="submit" className="sibtn" onSubmit={handlechanges}>sign in</button>
+          <button type="submit" className="sibtn" onClick={handlechanges}>sign in</button>
         </form>
       </div>
     </div>

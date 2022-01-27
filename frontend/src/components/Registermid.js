@@ -4,8 +4,8 @@ import './Registermid.css';
 
 
 function Registermid() {
-  const navigate=useNavigate();
-  const [user,setUser]=useState({name:"",phone:"",district:"",pincode:"",email:"",state:"",address:"",password:""})
+  const navigate=useNavigate(); 
+  const [user,setUser]=useState({name:"",phone:"",district:"",pincode:"",email:"",state:"",address:"",password:""})  
   let name,value;
   const handleinputs=(e)=>{
     e.preventDefault();
@@ -30,25 +30,26 @@ function Registermid() {
         })
       });
       console.log(data);
+      
+      if(data.status===400){
+        window.alert('user exists');
+        console.log('user exists');
+      }
+      else if(data.status===401){
+        window.alert('password incorrect');
+        console.log('password incorrect');
+      }else if(data.status===403){
+        window.alert('Invalid details');
+        console.log('Invalid details');
+      }else if(data.status===200){
+        window.alert('success');
+        console.log('success');
       navigate('/',{ replace: true });
-      // if(response.status===400){
-      //   window.alert('user exists');
-      //   console.log('user exists');
-      // }
-      // else if(response.status===401){
-      //   window.alert('password incorrect');
-      //   console.log('password incorrect');
-      // }else if(response.status===403){
-      //   window.alert('Invalid details');
-      //   console.log('Invalid details');
-      // }else if(response.status===200){
-      //   window.alert('success');
-      //   console.log('success');
-      // }
-      // else if(response.status===500){
-      //   window.alert('server error');
-      //   console.log('server error');
-      // };
+      }
+      else if(data.status===500){
+        window.alert('server error');
+        console.log('server error');
+      };
       
     };
 
