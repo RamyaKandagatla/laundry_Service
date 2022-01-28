@@ -16,8 +16,8 @@ function App() {
       
         <Route exact path='/' element={<Loginpage/>}/>
         <Route exact path='/register' element={<Registerpage/>}/>
-        <Route exact path='/createorder' element={<Createorder/>}/>
-        <Route exact path='/Products' element={<Products/>}/>
+        <Route exact path='/createorderpage' element={<Createorder/>}/>
+        <Route exact path='/Productspage' element={<Products/>}/>
         
       </Routes>
     </Router>

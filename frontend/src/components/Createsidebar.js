@@ -6,18 +6,18 @@ import list from '../images/list.svg';
 
 function Createsidebar() {
   return (
-    <div className='create-m'>
-        <img src={home} alt="home" className='homeo'/>
-        <div className='innerboxxx'>
-            <img src={more} alt="plus" className='plusss'></img>
+    <div className='create-m1'>
+        <img src={home} alt="home" className='homeoo'/>
+        <div className='innerboxxxi'>
+            <img src={more} alt="plus" className='plusssp'></img>
         </div>
-        <img src={list} alt="list" className='listtt'/>
-        <h2 className='ordersss'>Orders | 0</h2>
-        <input type="text" name="search" className='searchbarrr'></input>
-        <h6 className='norderrr'>No Orders avaialble</h6>
-        <button className='orderbtnnn'><p className='Orderppp'>Create</p></button>
-        <div className='orderfooterrr'>
-            <p className="orderparaaa">2021&#169;Laundry</p>
+        <img src={list} alt="list" className='listttl'/>
+        <h2 className='orderssso'>Orders | 0</h2>
+        <input type="text" name="search" className='searchbarrrs'></input>
+        <h6 className='norderrrn'>No Orders avaialble</h6>
+        <button className='orderbtnnno'><p className='Orderpppo'>Create</p></button>
+        <div className='orderfooterrro'>
+            <p className="orderparaaao">2021&#169;Laundry</p>
       </div>
        
     </div>
