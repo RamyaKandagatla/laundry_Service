@@ -1,8 +1,6 @@
 import React from 'react';
 import './Createordertop.css';
-import home from '../images/home.svg';
-import more from '../images/more.svg';
-import list from '../images/list.svg';
+
 
 
 

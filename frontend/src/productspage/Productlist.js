@@ -1,8 +1,8 @@
-import React from 'react';
-import washingmachine from '../images/washing-machine.svg';
-import bleach from '../images/bleach.svg';
-import ironing from '../images/ironing.svg';
-import towel from '../images/towel.svg';
+import React,{useState} from 'react';
+import washingmachine from '../images/washing-machineplain.svg';
+import bleach from '../images/bleachplain.svg';
+import ironing from '../images/ironingplain.svg';
+import towel from '../images/towelplain.svg';
 import shirt from '../images/shirt.jpg';
 import tshirt from '../images/t-shirt.jpg';
 import trousers from '../images/trousers.jpg';
@@ -12,7 +12,13 @@ import sarees from '../images/sarees.jpeg';
 import boxers from '../images/boxers.jpg';
 import './Productlist.css';
 
+import Createmodal from '../summarypages/Createmodal';
+
 const Productlist = () => {
+
+const[createopen,setcreateopen]=useState(false);
+
+
   return (
     <div className='main-container'>
         <p className='product'>Product Types</p>
@@ -113,7 +119,8 @@ const Productlist = () => {
 
         
         <button className="closebtn">Cancel</button>
-        <button className="proceedbtn">Proceed</button>
+        <button className="proceedbtn"  onClick={()=>{setcreateopen(true)}}>Proceed</button>
+        {createopen && <Createmodal closemodal={setcreateopen}/>}
 
     </div>
         

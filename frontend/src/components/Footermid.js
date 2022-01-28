@@ -5,21 +5,21 @@ import insta from "../images/instagram.svg";
 import lkdn from "../images/linkedin.svg";
 
 function footermid() {
-  return <div className='hello'>
-          <p className="aboutus">ABOUT US</p>
-          <p className="doorstep">Doorstep Wash & Dryclean Service</p>
-          <p className="home">Home</p>
-          <p className="signin">Sign In</p>
-          <p className="register">Register</p>
-          <p className="pricing">Pricing</p>
-          <p className="career">Carrer</p>
-          <p className="blogs">Blogs</p>
-          <p className="create">Create</p>
-          <p className="contact">Contact</p>
-          <p className="socialmedia">SOCIAL MEDIA</p>
-          <img src={fb} alt="fb" className="fb" />
-          <img src={insta} alt="insta" className="insta" />
-          <img src={lkdn} alt="lkdn" className="lkdn" />
+  return <div className='hellooo'>
+          <p className="aboutuss">ABOUT US</p>
+          <p className="doorstepp">Doorstep Wash & Dryclean Service</p>
+          <p className="homee">Home</p>
+          <p className="signinn">Sign In</p>
+          <p className="registerr">Register</p>
+          <p className="pricingg">Pricing</p>
+          <p className="careerr">Carrer</p>
+          <p className="blogss">Blogs</p>
+          <p className="createe">Create</p>
+          <p className="cccontact">Contact</p>
+          <p className="socialmediaaa">SOCIAL MEDIA</p>
+          <img src={fb} alt="fb" className="fbb" />
+          <img src={insta} alt="insta" className="instaa" />
+          <img src={lkdn} alt="lkdn" className="lkdnn" />
       
   </div>;
 }

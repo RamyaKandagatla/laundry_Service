@@ -3,8 +3,8 @@ import './Commonfooter.css';
 
 function Commonfooter() {
   return (
-      <div className='main-footer'>
-        <p className="lastpara">2021&#169;Laundry</p>
+      <div className='mf'>
+        <p className="la">2021&#169;Laundry</p>
       </div>
 
   )}

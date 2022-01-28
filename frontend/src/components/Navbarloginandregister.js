@@ -4,7 +4,7 @@ import './Navbarloginandregister.css'
 
 function Navbarloginandregister() {
   return (
-  <div className='main'>
+  <div className='mm'>
     <h1 className='one'>LAUNDRY</h1>
     <button className='two'>Home</button>
     <button className='three'>Pricing</button>
