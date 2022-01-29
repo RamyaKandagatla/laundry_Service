@@ -39,7 +39,7 @@ function Createmodal({ closemodal }) {
       </div>
       <button className="adn"><p>ADD NEW</p></button>
         <div className="btm">
-            <button className="cn">Confirm</button>
+            <button className="cn" onClick={() => closemodal(false)}>Confirm</button>
         </div>
     </div>
   );
