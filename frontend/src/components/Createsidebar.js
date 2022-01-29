@@ -3,6 +3,7 @@ import './Createsidebar.css';
 import home from '../images/home.svg';
 import more from '../images/more.svg';
 import list from '../images/list.svg';
+import { Link } from 'react-router-dom';
 
 function Createsidebar() {
   return (
@@ -15,7 +16,7 @@ function Createsidebar() {
         <h2 className='orderssso'>Orders | 0</h2>
         <input type="text" name="search" className='searchbarrrs'></input>
         <h6 className='norderrrn'>No Orders avaialble</h6>
-        <button className='orderbtnnno'><p className='Orderpppo'>Create</p></button>
+        <Link to='/Productspage'><button className='orderbtnnno'><p className='Orderpppo'>Create</p></button></Link>
         <div className='orderfooterrro'>
             <p className="orderparaaao">2021&#169;Laundry</p>
       </div>

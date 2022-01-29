@@ -71,6 +71,7 @@ router.post('/login',async(req,res)=>{
         const{email,password}=req.body;  // phone
 
         const exist=await users.findOne({email});
+        const id=exist._id
         if (!exist){
             return res.status(400).send('User not exist');
         }
@@ -78,9 +79,8 @@ router.post('/login',async(req,res)=>{
         bcrypt.compare(password,exist.password, async function(err, result) {
             if(err){
                 console.log(err)
-                return res.status(500).json({
-                    status:"failed",
-                    message:"invalid credentials"
+                return res.status(401).json({
+                    message:"Invalid crendentials"
                 })
 
             }else{
@@ -89,20 +89,19 @@ router.post('/login',async(req,res)=>{
                         exp: Math.floor(Date.now() / 1000) + (60 * 60),
                         data: exist._id
                       }, secret);
+                      const user=await users.findOneAndUpdate({_id:id},{$set:{token:token}})
                     return res.status(200).json({
-                        status: "success",
-                        token:token
+                        // status:"success",
+                        data:user
                     });
-                }else{
-                    console.log(result);
-                    return res.status(400).json({
-                        status:"failed",
-                        message:"Invalid crendetials"
-                    })
-                }
-                
+                    // return res.status(200).json({
+                    //     id,
+                    //     status: "success",
+                    //     token:token
+                    // });
 
-            }
+                }
+                }
         });
         // if(exist.phone!=phone){
         //     return res.status(400).status('User not exist');
@@ -111,7 +110,7 @@ router.post('/login',async(req,res)=>{
         
     }catch(e){
         console.log(e);
-
+        return res.status(500).send('server error');
     }
 });
 

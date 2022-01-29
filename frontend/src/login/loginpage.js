@@ -1,4 +1,4 @@
-import "./loginpage.css";
+import React from 'react';
 
 import Navbarloginandregister from '../components/Navbarloginandregister';
 import Footertop from '../components/Footertop';
