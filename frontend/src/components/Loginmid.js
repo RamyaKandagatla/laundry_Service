@@ -4,6 +4,7 @@ import lock from "../images/padlock.svg";
 import './Loginmid.css';
 
 function Loginmid() {
+  const[erremail,seterrmail]=useState('');
   const navigate=useNavigate();
   const [user,setUser]=useState({email:"",password:""})
   let name,value;
@@ -28,16 +29,18 @@ function Loginmid() {
   });
   if(users.status===200){
     alert('success');
+    navigate('/createorderpage',{ replace: true });
     
   }
   else if(users.status===401){
     alert('invalid crendentials');
   }else if(users.status===500){
-    alert('server error')
+    seterrmail('please enter a valid email/Phone Number');
   }else if(users.status===400){
-    alert('user exists')
+    alert('user not exists')
+    seterrmail('please enter a valid email/Phone Number');
   }
-  navigate('/createorderpage',{ replace: true });
+  
 };
   return (
     <div className="lm">
@@ -63,6 +66,7 @@ function Loginmid() {
           <label className="ll1">Mobile/Email</label>
           <br />
           <input type="text" name="email" className="eml" value={user.email} onChange={changes}  />
+          <p className='errmsg'>{erremail}</p>
           <br />
 
           <label className="ll2">password</label>
@@ -70,6 +74,7 @@ function Loginmid() {
 
           <input type="password"  name="password" className="pw" value={user.password} onChange={changes} />
           <img src={lock} alt="lock" />
+  
 
           <h6>forgot password?</h6>
           <button type="submit" className="sibtn" onClick={handlechanges}>sign in</button>

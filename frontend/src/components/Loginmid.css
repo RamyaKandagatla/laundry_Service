@@ -97,6 +97,13 @@ letter-spacing: 0.6px;
 color: #EF1A1A;
 opacity: 1;
 }
+.errmsg{
+    position:relative;
+    top:300px;
+    left:140px;
+    color:#EF1A1A;
+
+}
 .ll2{
     position:absolute;
     top:376px;

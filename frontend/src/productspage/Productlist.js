@@ -398,7 +398,7 @@ useEffect(() => {
         <img src={fold1?to:towel} alt="towel" className="towel1" onClick={foldtouch1}></img>
         <img src={pack1?bl:bleach} alt="bleach" className="bleach1" onClick={packtouch1}></img>
         <p className="price1">{quantity.quantity1 ? `${quantity.quantity1} * ${Type1}=${price1}` : 0 }</p>
-        <button className='reset1' onClick={()=>{setwash1(false);setPress1(false);setFold1(false);setPack1(false);setQuantity({quantity1:0})}}>Reset</button>
+        <button className='reset1' onClick={()=>{setwash1(false);setPress1(false);setFold1(false);setPack1(false);setQuantity({quantity1:0,quantity2:quantity.quantity2,quantity3:quantity.quantity3,quantity4:quantity.quantity4,quantity5:quantity.quantity5,quantity6:quantity.quantity6,quantity7:quantity.quantity7})}}>Reset</button>
         </div>
 
         <div>
@@ -411,7 +411,7 @@ useEffect(() => {
         <img src={fold2?to:towel}  alt="towel" className="towel2" onClick={foldtouch2}></img>
         <img src={pack2?bl:bleach} alt="bleach" className="bleach2" onClick={packtouch2}></img>
         <p className="price2">{quantity.quantity2 ? `${quantity.quantity2} * ${Type2}=${price2}` : 0 }</p>
-        <button className='reset2' onClick={()=>{setwash2(false);setPress2(false);setFold2(false);setPack2(false);setQuantity({quantity2:0})}} >Reset</button>
+        <button className='reset2' onClick={()=>{setwash2(false);setPress2(false);setFold2(false);setPack2(false);setQuantity({quantity1:quantity.quantity1,quantity2:0,quantity3:quantity.quantity3,quantity4:quantity.quantity4,quantity5:quantity.quantity5,quantity6:quantity.quantity6,quantity7:quantity.quantity7})}} >Reset</button>
         </div>
 
         <div>
@@ -424,7 +424,7 @@ useEffect(() => {
         <img src={fold3?to:towel}  alt="towel" className="towel3" onClick={foldtouch3}></img>
         <img src={pack3?bl:bleach} alt="bleach" className="bleach3" onClick={packtouch3}></img>
         <p className="price3">{quantity.quantity3 ? `${quantity.quantity3} * ${Type3}=${price3}` : 0 }</p>
-        <button className='reset3' onClick={()=>{setwash3(false);setPress3(false);setFold3(false);setPack3(false);setQuantity({quantity3:0})}}>Reset</button>
+        <button className='reset3' onClick={()=>{setwash3(false);setPress3(false);setFold3(false);setPack3(false);setQuantity({quantity1:quantity.quantity1,quantity2:quantity.quantity2,quantity3:0,quantity4:quantity.quantity4,quantity5:quantity.quantity5,quantity6:quantity.quantity6,quantity7:quantity.quantity7})}}>Reset</button>
         </div>
 
         <div>
@@ -437,7 +437,7 @@ useEffect(() => {
         <img src={fold4?to:towel}  alt="towel" className="towel4" onClick={foldtouch4}></img>
         <img src={pack4?bl:bleach} alt="bleach" className="bleach4" onClick={packtouch4}></img>
         <p className="price4">{quantity.quantity4 ? `${quantity.quantity4} * ${Type4}=${price4}` : 0 }</p>
-        <button className='reset4' onClick={()=>{setwash4(false);setPress4(false);setFold4(false);setPack4(false);setQuantity({quantity4:0})}}>Reset</button>
+        <button className='reset4' onClick={()=>{setwash4(false);setPress4(false);setFold4(false);setPack4(false);setQuantity({quantity1:quantity.quantity1,quantity2:quantity.quantity2,quantity3:quantity.quantity3,quantity4:0,quantity5:quantity.quantity5,quantity6:quantity.quantity6,quantity7:quantity.quantity7})}}>Reset</button>
         </div>
 
         <div>
@@ -450,7 +450,7 @@ useEffect(() => {
         <img src={fold5?to:towel}  alt="towel" className="towel5" onClick={foldtouch5}></img>
         <img src={pack5?bl:bleach} alt="bleach" className="bleach5" onClick={packtouch5}></img>
         <p className="price5">{quantity.quantity5 ? `${quantity.quantity5} * ${Type5}=${price5}` : 0 }</p>
-        <button className='reset5' onClick={()=>{setwash5(false);setPress5(false);setFold5(false);setPack5(false);setQuantity({quantity5:0})}}>Reset</button>
+        <button className='reset5' onClick={()=>{setwash5(false);setPress5(false);setFold5(false);setPack5(false);setQuantity({quantity1:quantity.quantity1,quantity2:quantity.quantity2,quantity3:quantity.quantity3,quantity4:quantity.quantity4,quantity5:0,quantity6:quantity.quantity6,quantity7:quantity.quantity7})}}>Reset</button>
         </div>
 
         <div>
@@ -463,7 +463,7 @@ useEffect(() => {
         <img src={fold6?to:towel}  alt="towel" className="towel6" onClick={foldtouch6} ></img>
         <img src={pack6?bl:bleach} alt="bleach" className="bleach6" onClick={packtouch6}></img>
         <p className="price6">{quantity.quantity6 ? `${quantity.quantity6} * ${Type6}=${price6}` : 0 }</p>
-        <button className='reset6' onClick={()=>{setwash6(false);setPress6(false);setFold6(false);setPack6(false);setQuantity({quantity6:0})}}>Reset</button>
+        <button className='reset6' onClick={()=>{setwash6(false);setPress6(false);setFold6(false);setPack6(false);setQuantity({quantity1:quantity.quantity1,quantity2:quantity.quantity2,quantity3:quantity.quantity3,quantity4:quantity.quantity4,quantity5:quantity.quantity5,quantity6:0,quantity7:quantity.quantity7})}}>Reset</button>
         </div>
 
         <div>
@@ -476,7 +476,7 @@ useEffect(() => {
         <img src={fold7?to:towel}  alt="towel" className="towel7" onClick={foldtouch7}></img>
         <img src={pack7?bl:bleach} alt="bleach" className="bleach7" onClick={packtouch7}></img>
         <p className="price7">{quantity.quantity7 ? `${quantity.quantity7} * ${Type7}=${price7}` : 0 }</p>
-        <button className='reset7' onClick={()=>{setwash7(false);setPress7(false);setFold7(false);setPack7(false);setQuantity({quantity7:0})}}>Reset</button>
+        <button className='reset7' onClick={()=>{setwash7(false);setPress7(false);setFold7(false);setPack7(false);setQuantity({quantity1:quantity.quantity1,quantity2:quantity.quantity2,quantity3:quantity.quantity3,quantity4:quantity.quantity4,quantity5:quantity.quantity5,quantity6:quantity.quantity6,quantity7:0})}}>Reset</button>
         </div>
 
 
