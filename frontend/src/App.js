@@ -6,7 +6,7 @@ import Loginpage from './login/loginpage';
 import Registerpage from './register/Registerpage';
 import Createorder from './createorder/createorder';
 import Products from './productspage/Products';
-
+import Pastorderspage from './pastorders/Pastorderspage';
 
 function App() {
   return (
@@ -18,8 +18,10 @@ function App() {
         <Route exact path='/register' element={<Registerpage/>}/>
         <Route exact path='/createorderpage' element={<Createorder/>}/>
         <Route exact path='/Productspage' element={<Products/>}/>
+        <Route exact path='/Pastorders' element={<Pastorderspage/>}/>
         
       </Routes>
+
     </Router>
     
   );

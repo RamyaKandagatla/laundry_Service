@@ -72,42 +72,42 @@ function Registermid() {
       <div className="m2left">
         <label>Name</label>
         <br></br>
-        <input type="text" name="name" value={user.name} onChange={handleinputs}></input>
+        <input type="text" className='inputregister' name="name" value={user.name} onChange={handleinputs}></input>
         <br></br>
         <br></br>
         <label>Phone</label>
         <br></br>
-        <input type="tel" name="phone" value={user.phone} onChange={handleinputs}></input>
+        <input type="tel" className='inputregister' name="phone" value={user.phone} onChange={handleinputs}></input>
         <br></br>
         <br></br>
         <label>District</label>
         <br></br>
-        <input type="text" name="district" value={user.district} onChange={handleinputs}></input>
+        <input type="text" className='inputregister' name="district" value={user.district} onChange={handleinputs}></input>
         <br></br>
         <br></br>
         <label>Pincode</label>
         <br></br>
-        <input type="number" name="pincode" value={user.pincode} onChange={handleinputs}></input>
+        <input type="number" className='inputregister' name="pincode" value={user.pincode} onChange={handleinputs}></input>
       </div>
       <div className="m2right">
         <label>Email</label>
         <br></br>
-        <input type="email" name="email" value={user.email} onChange={handleinputs}></input>
+        <input type="email" className='inputregister' name="email" value={user.email} onChange={handleinputs}></input>
         <br></br>
         <br></br>
         <label>State</label>
         <br></br>
-        <input type="text" name="state" value={user.state} onChange={handleinputs}></input>
+        <input type="text" className='inputregister' name="state" value={user.state} onChange={handleinputs}></input>
         <br></br>
         <br></br>
         <label>Address</label>
         <br></br>
-        <input type="text" name="address" value={user.address} onChange={handleinputs}></input>
+        <input type="text" className='inputregister' name="address" value={user.address} onChange={handleinputs}></input>
         <br></br>
         <br></br>
         <label>Password</label>
         <br></br>
-        <input type="password" name="password" value={user.password} onChange={handleinputs}></input>
+        <input type="password" className='inputregister' name="password" value={user.password} onChange={handleinputs}></input>
       </div>
   
     <div className="checkbox">

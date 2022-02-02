@@ -2,8 +2,10 @@ import React from "react";
 import "./Createmodal.css";
 import tick from "../images/tick.svg";
 
-function Createmodal({ closemodal }) {
+
+function Createmodal({closemodal , closepopup}) { 
   return (
+    <div className="summcss">
     <div className="summary-container">
       <div className="sumnav">
         <h4 className="sum">Summary</h4>
@@ -39,8 +41,12 @@ function Createmodal({ closemodal }) {
       </div>
       <button className="adn"><p>ADD NEW</p></button>
         <div className="btm">
-            <button className="cn" onClick={() => closemodal(false)}>Confirm</button>
+            <button className="cn" onClick={() => { closemodal(false) ;closepopup(true)}} >Confirm</button>
+          
         </div>
+    </div>
+
+    
     </div>
   );
 }

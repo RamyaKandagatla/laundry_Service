@@ -165,3 +165,10 @@ color: #FFFFFF;
 opacity: 1;
 
 }
+.eml,.pw{
+    border:none;
+    background: #F8F9FF 0% 0% no-repeat padding-box;;
+    outline: none;
+    border-bottom: 1px solid #5861AE;
+    opacity: 1;
+}

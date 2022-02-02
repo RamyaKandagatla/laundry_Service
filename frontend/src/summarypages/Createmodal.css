@@ -1,9 +1,15 @@
+.summcss{
+    box-sizing: border-box;
+    margin-left:30px;
+    transform: scale(0.9); 
+    transform-origin: 0 0;
+}
 .summary-container{
     position: absolute;
-    top: -180px;
+    top: -200px;
 left: 514px;
-width: 926px;
-height: 933px;
+width: 940px;
+height: 1050px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 opacity: 1;
 }
