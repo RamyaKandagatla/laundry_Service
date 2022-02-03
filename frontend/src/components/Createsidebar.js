@@ -6,6 +6,13 @@ import list from '../images/list.svg';
 import { Link } from 'react-router-dom';
 
 function Createsidebar() {
+  // const navigate=useNavigate();
+  // console.log("hello",localStorage.getItem('token'));
+  // if(localStorage.getItem('token')==null){
+  //   navigate('/',{ replace: true });
+  //   return(<></>);
+  // }
+
   return (
     <div className='create-m1'>
         <img src={home} alt="home" className='homeoo'/>

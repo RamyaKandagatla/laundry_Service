@@ -1,14 +1,22 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./Pastorderspage.css";
 import home from '../images/home.svg';
 import list from '../images/listcolor.svg';
 import plus from '../images/morewhite.svg';
 import {Link} from 'react-router-dom';
 
-
+import {useNavigate} from 'react-router-dom';
 
 function Pastorderspage() {
-
+  const navigate=useNavigate();
+  const[token,settoken]=useState(localStorage.getItem('token'));
+  useEffect(()=>{
+    if(token==null){
+      alert('please log in to continue');
+      navigate('/',{ replace: true });
+    }
+    
+  },[token])
 
 
   

@@ -92,7 +92,8 @@ router.post('/login',async(req,res)=>{
                       const user=await users.findOneAndUpdate({_id:id},{$set:{token:token}})
                     return res.status(200).json({
                         // status:"success",
-                        data:user
+                        data:user,
+                        token:token
                     });
                     // return res.status(200).json({
                     //     id,

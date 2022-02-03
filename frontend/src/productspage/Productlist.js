@@ -18,8 +18,19 @@ import './Productlist.css';
 
 import Createmodal from '../summarypages/Createmodal';
 import Popupmodal from '../summarypages/Popupmodal';
+import {useNavigate} from 'react-router-dom';
 
 const Productlist = () => {
+
+  const navigate=useNavigate();
+  const[token,settoken]=useState(localStorage.getItem('token'));
+  useEffect(()=>{
+    if(token==null){
+      alert('please log in to continue');
+      navigate('/',{ replace: true });
+    }
+    
+  },[token])
 
 const[createopen,setcreateopen]=useState(false);
 const[popupopen,setpopupopen]=useState(false);

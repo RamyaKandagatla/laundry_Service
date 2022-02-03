@@ -28,7 +28,12 @@ function Loginmid() {
       })
   });
   if(users.status===200){
+    const data=await users.json()
+    console.log(data.token);
+    localStorage.setItem('token',data.token)
+    console.log(localStorage.getItem('token'))
     alert('success');
+
     navigate('/createorderpage',{ replace: true });
     
   }
