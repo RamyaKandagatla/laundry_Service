@@ -14,11 +14,11 @@ function Createmodal({closemodal , closepopup}) {
         </button>
       </div>
       <div className="navdown">
-        <input type="text" placeholder="Store Location" className="loc"></input>
+        <input type="text" placeholder="Store Location" className="loc" value="JP Nagar"></input>
         <p className="add">Store Address:</p>
-        <p className="hash1">—</p>
+        <p className="hash1">Near Phone booth, 10th road</p>
         <p className="ph">Phone</p>
-        <p className="hash2">—</p>
+        <p className="hash2">+91-9996377267</p>
       </div>
       <p className="details">Order Details</p>
       <div className="table"></div>
