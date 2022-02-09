@@ -34,7 +34,7 @@ router.post('/orders',async(req,res)=>{
 });
 
 
-router.get("/orders", async function(req, res) {
+router.get("/orders", async (req, res)=>{
     try {
         const getorders = await orders.find({ user: req.user }).sort({
             _id: -1,
@@ -51,7 +51,7 @@ router.get("/orders", async function(req, res) {
     }
 });
 
-router.get('/:id',async(req,res)=>{
+router.get('/orders/:id',async(req,res)=>{
     try{
         const order = await orders.find({_id:req.params.id});
         res.status(200).json({
@@ -66,6 +66,33 @@ router.get('/:id',async(req,res)=>{
         })
     }
 });
+router.put('/orders/:id',async(req,res)=>{
+    try{
+        const { status } = req.body;
+        const statusupdate = await Items.findOne({ _id: req.params.id });
+
+        if (!statusupdate) {
+            return res.status(404).json({
+                status: "Not updated",
+                message: "order not created/found",
+            });
+        }
+        const Updatestatus = await Items.updateOne({ _id: req.params.id }, {
+            status,
+        });
+        return res.status(200).json({
+            status: "success",
+            message: "Status Updated",
+        });
+
+    }catch(e){
+        res.status(500).json({
+            status: "Not an authorized user to update",
+            message: e.message,
+        });
+
+    }
+})
 
 
 module.exports=router;
