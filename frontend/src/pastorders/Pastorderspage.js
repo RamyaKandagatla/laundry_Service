@@ -63,7 +63,7 @@ function Pastorderspage() {
           authorization: `test ${token}`,
         },
         body: JSON.stringify({
-          status: "Order Canceled",
+          status: "Cancelled",
         }),
       });
       const data = await res.json();

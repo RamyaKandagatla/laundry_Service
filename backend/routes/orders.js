@@ -69,7 +69,7 @@ router.get('/orders/:id',async(req,res)=>{
 router.put('/orders/:id',async(req,res)=>{
     try{
         const { status } = req.body;
-        const statusupdate = await Items.findOne({ _id: req.params.id });
+        const statusupdate = await orders.findOne({ _id: req.params.id });
 
         if (!statusupdate) {
             return res.status(404).json({
@@ -77,14 +77,15 @@ router.put('/orders/:id',async(req,res)=>{
                 message: "order not created/found",
             });
         }
-        const Updatestatus = await Items.updateOne({ _id: req.params.id }, {
+        const Updatestatus = await orders.updateOne({ _id: req.params.id }, {
             status,
         });
+
         return res.status(200).json({
             status: "success",
             message: "Status Updated",
         });
-
+        
     }catch(e){
         res.status(500).json({
             status: "Not an authorized user to update",
