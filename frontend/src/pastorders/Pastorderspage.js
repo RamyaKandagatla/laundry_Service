@@ -74,7 +74,7 @@ function Pastorderspage() {
   }
   async function getproduct(id) {
     try {
-      const res = await fetch(`/orders/:id`, {
+      const res = await fetch(`/orders/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -195,7 +195,7 @@ function Pastorderspage() {
                             <tr>
                               <td>{ord.producttype}</td>
                               <td>
-                                {ord.pack && "wash"},{ord.pack && "Iron"},{" "}
+                                {ord.pack && "wash"},{ord.pack && "Iron"},
                                 {ord.pack && "fold"}, {ord.pack && "packing"}
                               </td>
                               <td>
@@ -211,7 +211,7 @@ function Pastorderspage() {
                       <td></td>
                       <td></td>
                       <td>Sub total:</td>
-                      <td>{post.totalprice - 90}</td>
+                      <td>{post.price - 90}</td>
                     </tr>
                     <tr>
                       <td></td>
@@ -223,7 +223,7 @@ function Pastorderspage() {
                       <td></td>
                       <td></td>
                       <td>Total :</td>
-                      <td>{post.totalprice}</td>
+                      <td>{post.price}</td>
                     </tr>
                   </div>
                 );

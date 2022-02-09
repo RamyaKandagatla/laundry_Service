@@ -37,6 +37,7 @@ router.post('/signup',async(req,res)=>{
                             address,
                             pincode
                         });
+                        console.log(user)
                         return res.status(200).json({
                             // status:"success",
                             data:user
@@ -52,6 +53,7 @@ router.post('/signup',async(req,res)=>{
                             // status:"failed",
                             message:e.message
                         })
+                        console.log('failed')
                     }
                 });
         }

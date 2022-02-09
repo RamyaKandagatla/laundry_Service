@@ -56,7 +56,7 @@ router.get('/orders/:id',async(req,res)=>{
         const order = await orders.find({_id:req.params.id});
         res.status(200).json({
             status:'success',
-            data:order.productlist
+            order
         });
 
     }catch(e){
