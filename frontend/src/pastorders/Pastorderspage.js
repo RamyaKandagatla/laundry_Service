@@ -326,13 +326,13 @@ function Pastorderspage() {
                       <td>{post.storephone}</td>
                       <td>{post.totalitems}</td>
                       <td>{post.price} Rs</td>
-                      {post.status === "Order Canceled" && (
+                      {post.status === "Cancelled" && (
                         <td className="rrOrdercancel">{post.status}</td>
                       )}
-                      {post.status !== "Order Canceled" && (
+                      {post.status !== "Cancelled" && (
                         <td>{post.status}</td>
                       )}
-                      {post.status !== "Order Canceled" && (
+                      {post.status !== "Cancelled" && (
                         <td
                           className="rrOrdercancel"
                           onClick={() => cancelfunction(post._id)}
@@ -340,7 +340,7 @@ function Pastorderspage() {
                           Cancel order
                         </td>
                       )}
-                      {post.status === "Order Canceled" && <td></td>}
+                      {post.status === "Cancelled" && <td></td>}
                       <td className="rrmodalexit">
                         <i
                           onClick={() => onclickview(post._id)}
