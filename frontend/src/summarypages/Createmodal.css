@@ -295,3 +295,330 @@ color: #FFFFFF;
 border:none;
 
 }
+.a{
+    position: absolute;
+    top: 233px;
+    left: 50px;
+    width: 55px;
+    height: 24px;
+    text-align: left;
+    font: normal normal normal 18px/24px Open Sans;
+    letter-spacing: 0.43px;
+    color: #1B2734;
+    opacity: 1;
+     
+}
+.b{
+    position: absolute;
+    top: 291px;
+left: 50px;
+width: 46px;
+height: 24px;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0.43px;
+color: #1B2734;
+opacity: 1;
+
+}
+.c{
+    position: absolute;
+    top: 350px;
+left: 50px;
+width: 46px;
+height: 24px;
+text-align: left;
+font: normal normal normal 18px/24px Open Sans;
+letter-spacing: 0.43px;
+color: #1B2734;
+opacity: 1;
+
+}
+.d{
+    position: absolute;
+    top: 238px;
+left: 250px;
+width: 119px;
+height: 22px;
+text-align: left;
+font: italic normal normal 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+
+}
+.e{
+    position: absolute;
+    top: 300px;
+left: 250px;
+width: 119px;
+height: 22px;
+text-align: left;
+font: italic normal normal 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+
+}
+.f{
+    position: absolute;
+    top: 360px;
+left: 250px;
+width: 119px;
+height: 22px;
+text-align: left;
+font: italic normal normal 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+
+}
+.g{
+    position: absolute;
+    top: 235px;
+left: 300px;
+width: 62px;
+height: 22px;
+text-align: left;
+font: normal normal 600 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+
+}
+.s1{
+    
+        position: absolute;
+        top: 150px;
+    left: 50px;
+    width: 300px;
+    height: 22px;
+    text-align: left;
+    font: normal normal 600 16px/22px Open Sans;
+    letter-spacing: 0.38px;
+    color: #1B2734;
+    opacity: 1;
+    
+}
+.s{
+    position: absolute;
+    top: 150px;
+left: 700px;
+width: 100px;
+height: 22px;
+text-align: left;
+font: normal normal 600 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+}
+/* services 2 */
+
+.s2{
+    position: absolute;
+        top: 180px;
+    left: 50px;
+    width: 300px;
+    height: 22px;
+    text-align: left;
+    font: normal normal 600 16px/22px Open Sans;
+    letter-spacing: 0.38px;
+    color: #1B2734;
+    opacity: 1;
+}
+.t{
+    position: absolute;
+    top: 180px;
+left: 700px;
+width: 100px;
+height: 22px;
+text-align: left;
+font: normal normal 600 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+}
+/* services3  */
+.s3{
+    position: absolute;
+        top: 200px;
+    left: 50px;
+    width: 300px;
+    height: 22px;
+    text-align: left;
+    font: normal normal 600 16px/22px Open Sans;
+    letter-spacing: 0.38px;
+    color: #1B2734;
+    opacity: 1;
+}
+.u{
+    position: absolute;
+    top: 200px;
+left: 700px;
+width: 100px;
+height: 22px;
+text-align: left;
+font: normal normal 600 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+}
+/*  services 4*/
+.s4{
+    position: absolute;
+        top: 220px;
+    left: 50px;
+    width: 300px;
+    height: 22px;
+    text-align: left;
+    font: normal normal 600 16px/22px Open Sans;
+    letter-spacing: 0.38px;
+    color: #1B2734;
+    opacity: 1;
+}
+.v{
+    position: absolute;
+    top: 220px;
+left: 700px;
+width: 100px;
+height: 22px;
+text-align: left;
+font: normal normal 600 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+}
+/* services 5 */
+.s5{
+    position: absolute;
+        top: 240px;
+    left: 50px;
+    width: 300px;
+    height: 22px;
+    text-align: left;
+    font: normal normal 600 16px/22px Open Sans;
+    letter-spacing: 0.38px;
+    color: #1B2734;
+    opacity: 1;
+}
+.w{
+    position: absolute;
+    top: 240px;
+left: 700px;
+width: 100px;
+height: 22px;
+text-align: left;
+font: normal normal 600 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+}
+/* services 6 */
+.s6{
+    position: absolute;
+        top: 260px;
+    left: 50px;
+    width: 300px;
+    height: 22px;
+    text-align: left;
+    font: normal normal 600 16px/22px Open Sans;
+    letter-spacing: 0.38px;
+    color: #1B2734;
+    opacity: 1;
+}
+.x{
+    position: absolute;
+    top: 260px;
+left: 700px;
+width: 100px;
+height: 22px;
+text-align: left;
+font: normal normal 600 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+}
+/* services 7 */
+.s7{
+    position: absolute;
+        top: 285px;
+    left: 50px;
+    width: 300px;
+    height: 22px;
+    text-align: left;
+    font: normal normal 600 16px/22px Open Sans;
+    letter-spacing: 0.38px;
+    color: #1B2734;
+    opacity: 1;
+}
+.y{
+    position: absolute;
+    top: 285px;
+left: 700px;
+width: 100px;
+height: 22px;
+text-align: left;
+font: normal normal 600 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+}
+.s8{
+    position: absolute;
+    top: 330px;
+left: 690px;
+width: 74px;
+height: 22px;
+text-align: left;
+font: normal normal normal 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+font-weight: bold;
+
+}
+.s9{
+    position: absolute;
+    top: 330px;
+left: 725px;
+width: 74px;
+height: 22px;
+text-align: left;
+font: normal normal normal 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+font-weight: bold;
+
+}
+.s10{
+    position: absolute;
+    top: 370px;
+left: 650px;
+width: 74px;
+height: 22px;
+text-align: left;
+font: normal normal normal 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+font-weight: bold;
+
+}
+.s11{
+    position: absolute;
+    top: 370px;
+left: 710px;
+width: 74px;
+height: 22px;
+text-align: left;
+font: normal normal normal 16px/22px Open Sans;
+letter-spacing: 0.38px;
+color: #1B2734;
+opacity: 1;
+font-weight: bold;
+
+}
+
+
+

@@ -50,12 +50,46 @@ const[pack1,setPack1]=useState(false);
 const[price1,setPrice1]=useState('-');
 const [Type1, setType1] = useState(0);
 
+let services1=''
+services1+='Shirts : '
+if (wash1){
+  services1+= '   washing'
+}
+if (press1){
+  services1+='  , ironing'
+}
+if (fold1){
+  services1+='  , fold'
+}
+if (pack1){
+  services1+=' ,pack'
+}
+
+
+
+
 const[wash2,setwash2]=useState(false);
 const[press2,setPress2]=useState(false);
 const[fold2,setFold2]=useState(false);
 const[pack2,setPack2]=useState(false);
 const[price2,setPrice2]=useState('-');
 const [Type2, setType2] = useState(0);
+
+let services2=''
+services2+='T-Shirts : '
+if (wash2){
+  services2+= '   washing'
+}
+if (press2){
+  services2+='  , ironing'
+}
+if (fold2){
+  services2+='  , fold'
+}
+if (pack2){
+  services2+=' ,pack'
+}
+
 
 
 const[wash3,setwash3]=useState(false);
@@ -64,6 +98,20 @@ const[fold3,setFold3]=useState(false);
 const[pack3,setPack3]=useState(false);
 const[price3,setPrice3]=useState('-');
 const [Type3, setType3] = useState(0);
+let services3=''
+services3+='Trousers : '
+if (wash3){
+  services3+= '   washing'
+}
+if (press3){
+  services3+='  , ironing'
+}
+if (fold3){
+  services3+='  , fold'
+}
+if (pack3){
+  services3+=' ,pack'
+}
 
 const[wash4,setwash4]=useState(false);
 const[press4,setPress4]=useState(false);
@@ -71,6 +119,20 @@ const[fold4,setFold4]=useState(false);
 const[pack4,setPack4]=useState(false);
 const[price4,setPrice4]=useState('-');
 const [Type4, setType4] = useState(0);
+let services4=''
+services4+='Jeans : '
+if (wash4){
+  services4+= '   washing'
+}
+if (press4){
+  services4+='  , ironing'
+}
+if (fold4){
+  services4+='  , fold'
+}
+if (pack4){
+  services4+=' ,pack'
+}
 
 const[wash5,setwash5]=useState(false);
 const[press5,setPress5]=useState(false);
@@ -78,6 +140,21 @@ const[fold5,setFold5]=useState(false);
 const[pack5,setPack5]=useState(false);
 const[price5,setPrice5]=useState('-');
 const [Type5, setType5] = useState(0);
+
+let services5=''
+services5+='Joggers : '
+if (wash5){
+  services5+= '   washing'
+}
+if (press5){
+  services5+='  , ironing'
+}
+if (fold5){
+  services5+='  , fold'
+}
+if (pack5){
+  services5+=' ,pack'
+}
 
 
 const[wash6,setwash6]=useState(false);
@@ -87,6 +164,20 @@ const[pack6,setPack6]=useState(false);
 const[price6,setPrice6]=useState('-');
 const [Type6, setType6] = useState(0);
 
+let services6=''
+services6+='Boxers : '
+if (wash6){
+  services6+= '   washing'
+}
+if (press6){
+  services6+='  , ironing'
+}
+if (fold6){
+  services6+='  , fold'
+}
+if (pack6){
+  services6+=' ,pack'
+}
 
 
 const[wash7,setwash7]=useState(false);
@@ -95,6 +186,21 @@ const[fold7,setFold7]=useState(false);
 const[pack7,setPack7]=useState(false);
 const[price7,setPrice7]=useState('-');
 const [Type7, setType7] = useState(0);
+
+let services7=''
+services7+='Others : '
+if (wash7){
+  services7+= '   washing'
+}
+if (press7){
+  services7+='  , ironing'
+}
+if (fold7){
+  services7+='  , fold'
+}
+if (pack7){
+  services7+=' ,pack'
+}
 
 
 
@@ -297,6 +403,7 @@ useEffect(() => {
 });
 
 
+
   return (
     
     <div className='main-container'>
@@ -399,14 +506,15 @@ useEffect(() => {
         
         <button className="closebtn">Cancel</button>
         <button className="proceedbtn"  onClick={()=>{setcreateopen(true)}}>Proceed</button>
-        {createopen && <Createmodal closemodal={setcreateopen} closepopup={setpopupopen}/>}
+        {createopen && <Createmodal closemodal={setcreateopen} services1={services1} price1={price1} Type1={Type1} quantity={quantity} services2={services2} price2={price2} Type2={Type2} services3={services3} price3={price3} Type3={Type3} services4={services4} price4={price4} Type4={Type4} services5={services5} price5={price5} Type5={Type5} services6={services6} price6={price6} Type6={Type6} services7={services7} price7={price7} Type7={Type7} closepopup={setpopupopen}/>}
         {popupopen && <Popupmodal closemodal={setpopupopen}/>}
+
         
 
     </div>
  
         
   );
-}
+ }
 
 export default Productlist;
